@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="Assets/css/form.css">
+</head>
+<body>
+
+    <form action="/payment_page" method="post">
+  
+    <h1>Course Registration page</h1>
+    
+    <fieldset>
+      <legend><span class="number">1</span>Your basic info</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name" placeholder="Full name">
+      
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email" placeholder="Email">
+      
+      
+      <label>Date of birth:</label>
+      <input type="date" name="dob" required>
+
+      <label>Phone no. :</label>
+      <input type="number" value="" name="phone" placeholder="phone no.">
+
+    
+    <label for="job">Courses :</label>
+    <select id="job" name="user_job">
+      <optgroup label="Web Development">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="javascript">javascript</option>
+        <option value="nodejs">nodejs </option>
+        <option value="mongodb">mongodb</option>
+        <option value="hosting">hosting</option>
+      </optgroup>
+      <optgroup label="programing languages">
+        <option value="c">c</option>
+        <option value="c++">c++</option>
+        <option value="java">java</option>
+        <option value="python">python </option>
+        <option value="swift">swift</option>
+        <option value="ruby">ruby</option>
+      </optgroup>
+      <optgroup label="frameworks">
+        <option value="django">django</option>
+        <option value="ruby on rails">ruby on rails</option>
+        <option value="express">express</option>
+        <option value="react">react </option>
+        <option value="angular">angular</option>
+        <option value="spring">spring</option>
+      </optgroup>
+      <optgroup label="node js">
+        <option value="http">http</option>
+        <option value="express">express</option>
+        <option value="mongodb">mongodb</option>
+      </optgroup>
+    </select>
+    
+    <button type="submit">Enroll</button>
+
+</fieldset>
+  </form>
+  
+</body>
+</html>
